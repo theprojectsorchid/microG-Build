@@ -26,7 +26,7 @@ sudo ./install.sh
 **2. Clone Build System**
 
 ```
-git clone https://github.com/BiTGApps/microG-Build.git vendor/gapps
+git clone https://github.com/BiTGApps/microG-Build.git vendor/microg
 ```
 
 **3. Check Build System**
@@ -34,24 +34,24 @@ git clone https://github.com/BiTGApps/microG-Build.git vendor/gapps
 Check size of cloned sources using below command:
 
 ```
-du -h -s vendor/gapps/sources
+du -h -s vendor/microg/sources
 ```
 
 It should be 90MB, if not then you need to integrate `git lfs` inside the source by using below commands:
 
 ```
-cd vendor/gapps
+cd vendor/microg
 git lfs install --local
 git lfs pull
 ```
 
-**4. Include GApps Make File**
+**4. Include MicroG Make File**
 
-The `gapps.mk` file will make the Android build system build the necessary packages, and include the necessary files.
+The `microg.mk` file will make the Android build system build the necessary packages, and include the necessary files.
 
-In `device/manufacturer/product/device.mk` file, towards the end, declare gapps makefile:
+In `device/manufacturer/product/device.mk` file, towards the end, declare microg makefile:
 ```
-$(call inherit-product, vendor/gapps/gapps.mk)
+$(call inherit-product, vendor/microg/microg.mk)
 ```
 
 **5. Build Android**

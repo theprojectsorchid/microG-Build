@@ -15,10 +15,10 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 # Common source
-GAPPS_COMMON_SOURCE := vendor/gapps/sources
+MICROG_COMMON_SOURCE := vendor/microg/sources
 
 # APK source
-APK_PREBUILT := vendor/gapps/core/prebuilt.mk
+APK_PREBUILT := vendor/microg/core/prebuilt.mk
 
 # Common modules
 PRODUCT_PACKAGES += \
@@ -38,10 +38,10 @@ PRODUCT_PACKAGES += \
 
 # Common system files
 PRODUCT_COPY_FILES += \
-    vendor/gapps/sources/etc/default-permissions/default-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-permissions.xml
+    vendor/microg/sources/etc/default-permissions/default-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-permissions.xml
 
 PRODUCT_COPY_FILES += \
-    vendor/gapps/sources/etc/permissions/privapp-permissions-microg.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml
+    vendor/microg/sources/etc/permissions/privapp-permissions-microg.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml
 
 PRODUCT_COPY_FILES += \
-    vendor/gapps/sources/etc/sysconfig/microg.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google.xml
+    vendor/microg/sources/etc/sysconfig/microg.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google.xml
