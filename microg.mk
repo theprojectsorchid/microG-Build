@@ -14,20 +14,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-# Common source
-MICROG_COMMON_SOURCE := vendor/microg/sources
-
-# APK source
-APK_PREBUILT := vendor/microg/core/prebuilt.mk
 
 # Common modules
 PRODUCT_PACKAGES += \
-    AppleNLPBackend \
     AuroraServices \
     DejaVuNLPBackend \
     DroidGuard \
     Extension \
-    FossDroid \
     LocalGSMNLPBackend \
     LocalWiFiNLPBackend \
     MicroGGMSCore \
